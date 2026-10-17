@@ -79,7 +79,8 @@ export const BRANCHES: Branch[] = [
     mapQuery: '-34.8010946,-58.4737946',
     whatsapp: '5491165329803',
     whatsappDisplay: '11 6532-9803',
-    // Captura de la fachada tomada de Google Street View (baja resolución): A CONFIRMAR, reemplazar por su foto.
+    // Fachada: versión mejorada con IA de una captura de Google Street View (el cartel, con teléfono y mail, es
+    // ilustrativo). A CONFIRMAR: reemplazar por una foto propia del local si el cliente avanza.
     photo: 'images/sucursal-onas.jpg',
     video: null,
     showSchedule: true,
