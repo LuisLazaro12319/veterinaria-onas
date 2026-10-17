@@ -24,20 +24,20 @@ export const Hero: React.FC = () => {
   const foto = CLINIC.photo ? `${import.meta.env.BASE_URL}${CLINIC.photo}` : null;
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-emerald-50 via-white to-emerald-50">
+    <section className="relative overflow-hidden bg-gradient-to-b from-violet-50 via-white to-violet-50">
       <div
         aria-hidden="true"
-        className="absolute -top-24 -left-24 w-80 h-80 rounded-full bg-emerald-200/50 blur-3xl pointer-events-none"
+        className="absolute -top-24 -left-24 w-80 h-80 rounded-full bg-violet-200/50 blur-3xl pointer-events-none"
       />
       <div
         aria-hidden="true"
-        className="absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-teal-100/60 blur-3xl pointer-events-none"
+        className="absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-blue-100/60 blur-3xl pointer-events-none"
       />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-10 lg:gap-14 items-center">
         {/* Texto */}
         <div>
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-emerald-300 bg-white/80 text-xs font-bold uppercase tracking-wider text-emerald-700 mb-6">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-violet-300 bg-white/80 text-xs font-bold uppercase tracking-wider text-violet-700 mb-6">
             <PawPrint className="w-3.5 h-3.5" />
             <span>Veterinaria</span>
             <span aria-hidden="true">·</span>
@@ -45,11 +45,11 @@ export const Hero: React.FC = () => {
           </div>
 
           <h1
-            className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-[1.08] font-extrabold tracking-tight text-emerald-950 mb-6"
+            className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-[1.08] font-extrabold tracking-tight text-violet-950 mb-6"
             style={{ textWrap: 'balance' }}
           >
             {CLINIC.headline}{' '}
-            <span className="bg-gradient-to-r from-emerald-600 to-lime-500 bg-clip-text text-transparent box-decoration-clone">
+            <span className="bg-gradient-to-r from-violet-600 to-sky-500 bg-clip-text text-transparent box-decoration-clone">
               {CLINIC.headlineHighlight}
             </span>
           </h1>
@@ -62,7 +62,7 @@ export const Hero: React.FC = () => {
             <a
               href="#turnos"
               onClick={irA('turnos')}
-              className="inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm md:px-5 md:py-3 lg:px-7 lg:py-4 lg:text-base font-bold text-white bg-gradient-to-r from-emerald-600 to-green-600 hover:from-emerald-700 hover:to-green-700 rounded-xl shadow-lg shadow-emerald-500/30 transition-all hover:-translate-y-0.5 whitespace-nowrap"
+              className="inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm md:px-5 md:py-3 lg:px-7 lg:py-4 lg:text-base font-bold text-white bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700 rounded-xl shadow-lg shadow-violet-500/30 transition-all hover:-translate-y-0.5 whitespace-nowrap"
             >
               <CalendarClock className="w-4 h-4 sm:w-5 sm:h-5" />
               <span>Reservar turno</span>
@@ -70,7 +70,7 @@ export const Hero: React.FC = () => {
             <a
               href="#ubicacion"
               onClick={irA('ubicacion')}
-              className="inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm md:px-5 md:py-3 lg:px-7 lg:py-4 lg:text-base font-semibold text-emerald-900 bg-white hover:bg-emerald-50 border border-emerald-200 rounded-xl shadow-md shadow-emerald-900/10 transition-all hover:-translate-y-0.5 whitespace-nowrap"
+              className="inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm md:px-5 md:py-3 lg:px-7 lg:py-4 lg:text-base font-semibold text-violet-900 bg-white hover:bg-violet-50 border border-violet-200 rounded-xl shadow-md shadow-violet-900/10 transition-all hover:-translate-y-0.5 whitespace-nowrap"
             >
               <MapPin className="w-4 h-4 sm:w-5 sm:h-5" />
               <span>Cómo llegar</span>
@@ -78,11 +78,11 @@ export const Hero: React.FC = () => {
           </div>
 
           {/* Cifras reales, con divisores verticales */}
-          <dl className="grid grid-cols-3 max-w-xl divide-x divide-emerald-200">
+          <dl className="grid grid-cols-3 max-w-xl divide-x divide-violet-200">
             {CIFRAS.map((c, i) => (
               <div key={c.etiqueta} className={i === 0 ? 'pr-3 lg:pr-6' : 'px-3 lg:px-6'}>
                 <dt className="sr-only">{c.etiqueta}</dt>
-                <dd className="text-xl md:text-2xl lg:text-3xl font-extrabold text-emerald-700 leading-none mb-1.5">{c.valor}</dd>
+                <dd className="text-xl md:text-2xl lg:text-3xl font-extrabold text-violet-700 leading-none mb-1.5">{c.valor}</dd>
                 <p className="text-[10px] md:text-[11px] lg:text-xs font-bold uppercase tracking-wider text-slate-500">{c.etiqueta}</p>
               </div>
             ))}
@@ -91,7 +91,7 @@ export const Hero: React.FC = () => {
 
         {/* Imagen con insignias flotantes */}
         <div className="relative lg:pl-6 max-sm:max-w-md max-sm:mx-auto max-sm:w-full">
-          <div className="relative rounded-[2rem] overflow-hidden shadow-2xl shadow-emerald-900/20 aspect-[4/5] bg-gradient-to-br from-emerald-300 via-emerald-200 to-teal-200">
+          <div className="relative rounded-[2rem] overflow-hidden shadow-2xl shadow-violet-900/20 aspect-[4/5] bg-gradient-to-br from-violet-300 via-violet-200 to-blue-200">
             {foto ? (
               <img src={foto} alt={`${CLINIC.name}, ${CLINIC.locality}`} className="w-full h-full object-cover" />
             ) : (
@@ -100,23 +100,23 @@ export const Hero: React.FC = () => {
                 <PawPrint className="absolute top-[18%] right-[14%] w-10 h-10 text-white/35 rotate-12" />
                 <PawPrint className="absolute bottom-[16%] left-[18%] w-12 h-12 text-white/35 rotate-6" />
                 <PawPrint className="absolute bottom-[10%] right-[12%] w-16 h-16 text-white/40 -rotate-6" />
-                <div className="w-44 h-44 sm:w-56 sm:h-56 rounded-full bg-white/45 backdrop-blur-sm flex items-center justify-center shadow-xl shadow-emerald-900/10">
-                  <PawPrint className="w-24 h-24 sm:w-32 sm:h-32 text-emerald-600" />
+                <div className="w-44 h-44 sm:w-56 sm:h-56 rounded-full bg-white/45 backdrop-blur-sm flex items-center justify-center shadow-xl shadow-violet-900/10">
+                  <PawPrint className="w-24 h-24 sm:w-32 sm:h-32 text-violet-600" />
                 </div>
               </div>
             )}
           </div>
 
-          <div className="levitar absolute top-5 right-3 sm:-right-3 lg:-right-4 rounded-2xl bg-emerald-900 text-white px-4 py-3 shadow-xl shadow-emerald-950/30 text-center">
+          <div className="levitar absolute top-5 right-3 sm:-right-3 lg:-right-4 rounded-2xl bg-violet-900 text-white px-4 py-3 shadow-xl shadow-violet-950/30 text-center">
             <div className="flex items-center justify-center gap-1.5 text-2xl font-extrabold leading-none">
               <Star className="w-5 h-5 fill-amber-300 text-amber-300" />
               <span>{CLINIC.googleRating.replace('.', ',')}</span>
             </div>
-            <div className="text-[10px] font-bold uppercase tracking-wider text-emerald-200 mt-1">en Google</div>
+            <div className="text-[10px] font-bold uppercase tracking-wider text-violet-200 mt-1">en Google</div>
           </div>
 
-          <div className="levitar-b absolute bottom-5 left-3 sm:-left-3 lg:-left-4 flex items-center gap-3 rounded-2xl bg-white px-4 py-3 shadow-xl shadow-emerald-900/15">
-            <span className="w-10 h-10 shrink-0 rounded-full bg-teal-50 text-teal-600 flex items-center justify-center">
+          <div className="levitar-b absolute bottom-5 left-3 sm:-left-3 lg:-left-4 flex items-center gap-3 rounded-2xl bg-white px-4 py-3 shadow-xl shadow-violet-900/15">
+            <span className="w-10 h-10 shrink-0 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center">
               <HeartHandshake className="w-5 h-5" />
             </span>
             <span>

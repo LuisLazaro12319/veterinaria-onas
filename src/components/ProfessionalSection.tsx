@@ -24,25 +24,25 @@ export const ProfessionalSection: React.FC = () => {
   };
 
   return (
-    <section id="profesional" className="relative py-16 lg:py-24 bg-white border-b border-green-100 overflow-hidden">
+    <section id="profesional" className="relative py-16 lg:py-24 bg-white border-b border-indigo-100 overflow-hidden">
       <div
         aria-hidden="true"
-        className="absolute -top-20 -right-20 w-72 h-72 rounded-full bg-green-100/70 blur-3xl pointer-events-none"
+        className="absolute -top-20 -right-20 w-72 h-72 rounded-full bg-indigo-100/70 blur-3xl pointer-events-none"
       />
       <div
         aria-hidden="true"
-        className="absolute -bottom-24 -left-16 w-72 h-72 rounded-full bg-green-100/60 blur-3xl pointer-events-none"
+        className="absolute -bottom-24 -left-16 w-72 h-72 rounded-full bg-indigo-100/60 blur-3xl pointer-events-none"
       />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Título de la sección, centrado y arriba */}
         <div className="text-center mb-6 lg:mb-8">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight">
-            <span className="bg-gradient-to-r from-emerald-700 via-emerald-600 to-green-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-violet-700 via-violet-600 to-indigo-500 bg-clip-text text-transparent">
               Nosotros
             </span>
           </h2>
-          <div className="mx-auto mt-4 h-1.5 w-20 rounded-full bg-gradient-to-r from-emerald-500 to-lime-400" />
+          <div className="mx-auto mt-4 h-1.5 w-20 rounded-full bg-gradient-to-r from-violet-500 to-sky-400" />
         </div>
 
         {/* Carrusel: una tarjeta por persona, todas con el mismo diseño.
@@ -67,13 +67,13 @@ export const ProfessionalSection: React.FC = () => {
                 >
                   <div className="max-w-5xl mx-auto text-center">
                     <p className="mb-5">
-                      <span className="inline-block px-3.5 py-1.5 rounded-full bg-emerald-50 text-emerald-700 border border-green-200 text-xs font-bold uppercase tracking-wider">
+                      <span className="inline-block px-3.5 py-1.5 rounded-full bg-violet-50 text-violet-700 border border-indigo-200 text-xs font-bold uppercase tracking-wider">
                         {m.role}
                       </span>
                     </p>
                     <h3 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
                       Perros, gatos y{' '}
-                      <span className="bg-gradient-to-r from-emerald-600 to-green-500 bg-clip-text text-transparent">
+                      <span className="bg-gradient-to-r from-violet-600 to-indigo-500 bg-clip-text text-transparent">
                         otras mascotas
                       </span>
                     </h3>
@@ -86,10 +86,10 @@ export const ProfessionalSection: React.FC = () => {
                               src={rutaFoto(src) ?? undefined}
                               alt={`Paciente de ${CLINIC.name}`}
                               loading="lazy"
-                              className="w-full aspect-square object-cover object-[50%_25%] rounded-2xl shadow-lg shadow-emerald-900/10"
+                              className="w-full aspect-square object-cover object-[50%_25%] rounded-2xl shadow-lg shadow-violet-900/10"
                             />
                           ) : (
-                            <div className="w-full aspect-square rounded-2xl border-2 border-dashed border-emerald-200 bg-gradient-to-br from-emerald-50 to-green-100 flex flex-col items-center justify-center gap-1.5 text-emerald-400">
+                            <div className="w-full aspect-square rounded-2xl border-2 border-dashed border-violet-200 bg-gradient-to-br from-violet-50 to-indigo-100 flex flex-col items-center justify-center gap-1.5 text-violet-400">
                               <PawPrint className="w-9 h-9 sm:w-11 sm:h-11" />
                               <span className="text-xs font-semibold">Foto del paciente</span>
                             </div>
@@ -111,14 +111,14 @@ export const ProfessionalSection: React.FC = () => {
                   <div className="lg:col-span-5">
                     <div className="max-w-md mx-auto">
                       <p className="text-center mb-5">
-                        <span className="inline-block px-3.5 py-1.5 rounded-full bg-emerald-50 text-emerald-700 border border-green-200 text-xs font-bold uppercase tracking-wider">
+                        <span className="inline-block px-3.5 py-1.5 rounded-full bg-violet-50 text-violet-700 border border-indigo-200 text-xs font-bold uppercase tracking-wider">
                           {m.role}
                         </span>
                       </p>
 
                       <div className="relative">
-                        <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-emerald-400 via-green-300 to-emerald-600 opacity-80 blur-sm" />
-                        <div className="relative rounded-[1.75rem] overflow-hidden bg-green-100 shadow-2xl shadow-emerald-900/20 aspect-square">
+                        <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-violet-400 via-indigo-300 to-violet-600 opacity-80 blur-sm" />
+                        <div className="relative rounded-[1.75rem] overflow-hidden bg-indigo-100 shadow-2xl shadow-violet-900/20 aspect-square">
                           {foto ? (
                             <img
                               src={foto}
@@ -127,19 +127,19 @@ export const ProfessionalSection: React.FC = () => {
                               className="w-full h-full object-cover"
                             />
                           ) : (
-                            <div className="w-full h-full bg-gradient-to-br from-emerald-50 to-green-100 flex flex-col items-center justify-center gap-2 text-emerald-400">
-                              <div className="w-24 h-24 rounded-full border-2 border-dashed border-emerald-300 flex items-center justify-center">
+                            <div className="w-full h-full bg-gradient-to-br from-violet-50 to-indigo-100 flex flex-col items-center justify-center gap-2 text-violet-400">
+                              <div className="w-24 h-24 rounded-full border-2 border-dashed border-violet-300 flex items-center justify-center">
                                 <UserRound className="w-11 h-11" />
                               </div>
                               <span className="text-xs font-semibold">Foto del integrante</span>
                             </div>
                           )}
                         </div>
-                        <div className="relative -mt-8 mx-6 rounded-2xl bg-white shadow-xl shadow-emerald-900/10 border border-green-100 px-5 py-4 text-center">
+                        <div className="relative -mt-8 mx-6 rounded-2xl bg-white shadow-xl shadow-violet-900/10 border border-indigo-100 px-5 py-4 text-center">
                           <h3 className={`text-xl font-extrabold ${m.name ? 'text-slate-900' : 'text-slate-400 italic'}`}>
                             {m.name ?? 'Nombre y apellido'}
                           </h3>
-                          <p className="text-sm text-emerald-700 font-semibold mt-0.5">
+                          <p className="text-sm text-violet-700 font-semibold mt-0.5">
                             {`${m.role} · ${CLINIC.name}`}
                           </p>
                         </div>
@@ -152,7 +152,7 @@ export const ProfessionalSection: React.FC = () => {
                       <>
                         <h3 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
                           Atención personalizada en{' '}
-                          <span className="bg-gradient-to-r from-emerald-600 to-green-500 bg-clip-text text-transparent">
+                          <span className="bg-gradient-to-r from-violet-600 to-indigo-500 bg-clip-text text-transparent">
                             {CLINIC.locality}
                           </span>
                         </h3>
@@ -162,8 +162,8 @@ export const ProfessionalSection: React.FC = () => {
                         </p>
 
                         <div className="hidden md:flex flex-wrap items-center gap-3 text-sm font-semibold mb-8">
-                          <div className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-emerald-50 text-emerald-900 border border-green-200">
-                            <MapPin className="w-4 h-4 text-emerald-600" />
+                          <div className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-violet-50 text-violet-900 border border-indigo-200">
+                            <MapPin className="w-4 h-4 text-violet-600" />
                             <span>{CLINIC.streets}</span>
                           </div>
                         </div>
@@ -171,7 +171,7 @@ export const ProfessionalSection: React.FC = () => {
                     ) : (
                       <>
                         <h3 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
-                          <span className="bg-gradient-to-r from-emerald-600 to-green-500 bg-clip-text text-transparent">
+                          <span className="bg-gradient-to-r from-violet-600 to-indigo-500 bg-clip-text text-transparent">
                             {m.role}
                           </span>
                         </h3>
@@ -185,7 +185,7 @@ export const ProfessionalSection: React.FC = () => {
                       <button
                         type="button"
                         onClick={() => irA(1)}
-                        className="hidden md:inline-flex items-center gap-1.5 px-5 py-3.5 text-sm font-bold text-emerald-800 bg-green-50 hover:bg-green-100 border border-green-200 rounded-xl transition-colors cursor-pointer"
+                        className="hidden md:inline-flex items-center gap-1.5 px-5 py-3.5 text-sm font-bold text-violet-800 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 rounded-xl transition-colors cursor-pointer"
                       >
                         <span>Mirá a nuestros pacientes</span>
                         <ChevronRight className="w-4 h-4" />
@@ -206,7 +206,7 @@ export const ProfessionalSection: React.FC = () => {
               onClick={() => irA(activo - 1)}
               disabled={activo === 0}
               aria-label="Anterior"
-              className="w-10 h-10 rounded-full border border-green-200 bg-white text-emerald-800 flex items-center justify-center hover:bg-green-50 disabled:opacity-35 disabled:cursor-default transition-colors cursor-pointer"
+              className="w-10 h-10 rounded-full border border-indigo-200 bg-white text-violet-800 flex items-center justify-center hover:bg-indigo-50 disabled:opacity-35 disabled:cursor-default transition-colors cursor-pointer"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
@@ -220,7 +220,7 @@ export const ProfessionalSection: React.FC = () => {
                   aria-label={m.name ?? m.role}
                   onClick={() => irA(i)}
                   className={`h-2.5 rounded-full transition-all cursor-pointer ${
-                    activo === i ? 'w-8 bg-emerald-600' : 'w-2.5 bg-green-200 hover:bg-green-300'
+                    activo === i ? 'w-8 bg-violet-600' : 'w-2.5 bg-indigo-200 hover:bg-indigo-300'
                   }`}
                 />
               ))}
@@ -230,7 +230,7 @@ export const ProfessionalSection: React.FC = () => {
               onClick={() => irA(activo + 1)}
               disabled={activo === TEAM.length - 1}
               aria-label="Siguiente"
-              className="w-10 h-10 rounded-full border border-green-200 bg-white text-emerald-800 flex items-center justify-center hover:bg-green-50 disabled:opacity-35 disabled:cursor-default transition-colors cursor-pointer"
+              className="w-10 h-10 rounded-full border border-indigo-200 bg-white text-violet-800 flex items-center justify-center hover:bg-indigo-50 disabled:opacity-35 disabled:cursor-default transition-colors cursor-pointer"
             >
               <ChevronRight className="w-5 h-5" />
             </button>

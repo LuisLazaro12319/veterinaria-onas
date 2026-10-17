@@ -63,20 +63,20 @@ export const ReviewsSection: React.FC = () => {
   return (
     <section
       id="opiniones"
-      className="relative py-16 lg:py-24 bg-gradient-to-b from-emerald-50 to-white border-b border-emerald-100 overflow-hidden"
+      className="relative py-16 lg:py-24 bg-gradient-to-b from-violet-50 to-white border-b border-violet-100 overflow-hidden"
     >
       <div
         aria-hidden="true"
-        className="absolute -top-24 -left-16 w-72 h-72 rounded-full bg-emerald-100/70 blur-3xl pointer-events-none"
+        className="absolute -top-24 -left-16 w-72 h-72 rounded-full bg-violet-100/70 blur-3xl pointer-events-none"
       />
       <div className="relative">
         <div className="text-center max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 md:mb-12">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight">
-            <span className="bg-gradient-to-r from-emerald-700 via-emerald-600 to-green-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-violet-700 via-violet-600 to-indigo-500 bg-clip-text text-transparent">
               Lo que dicen nuestros clientes
             </span>
           </h2>
-          <div className="mx-auto mt-4 mb-5 h-1.5 w-20 rounded-full bg-gradient-to-r from-emerald-500 to-green-400" />
+          <div className="mx-auto mt-4 mb-5 h-1.5 w-20 rounded-full bg-gradient-to-r from-violet-500 to-indigo-400" />
           <p className="text-base sm:text-lg text-slate-600">
             Opiniones reales de clientes en Google: {CLINIC.googleRating.replace('.', ',')} de 5 con{' '}
             {CLINIC.googleReviews} reseñas{CLINIC.googleScope}.
@@ -102,9 +102,9 @@ export const ReviewsSection: React.FC = () => {
             <li
               key={`${c}-${i}`}
               aria-hidden={c > 0 || undefined}
-              className="relative flex flex-col shrink-0 w-[78vw] min-w-[260px] max-w-[360px] rounded-3xl bg-white border border-emerald-100 shadow-lg shadow-emerald-900/5 p-6"
+              className="relative flex flex-col shrink-0 w-[78vw] min-w-[260px] max-w-[360px] rounded-3xl bg-white border border-violet-100 shadow-lg shadow-violet-900/5 p-6"
             >
-              <Quote className="absolute top-5 right-5 w-8 h-8 text-emerald-100" aria-hidden="true" />
+              <Quote className="absolute top-5 right-5 w-8 h-8 text-violet-100" aria-hidden="true" />
               <div className="flex items-center gap-0.5 text-amber-400 mb-4" aria-label="5 de 5 estrellas">
                 {[0, 1, 2, 3, 4].map((s) => (
                   <Star key={s} className="w-5 h-5 fill-current" strokeWidth={0} />
@@ -127,7 +127,7 @@ export const ReviewsSection: React.FC = () => {
             href={CLINIC.mapsUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white border border-emerald-200 text-emerald-800 font-bold text-sm hover:bg-emerald-50 shadow-sm transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white border border-violet-200 text-violet-800 font-bold text-sm hover:bg-violet-50 shadow-sm transition-colors"
           >
             <span>Ver todas las opiniones en Google</span>
             <ExternalLink className="w-4 h-4" />
