@@ -33,7 +33,7 @@ export const CLINIC = {
   about:
     "En Clínica Veterinaria Ona's somos una veterinaria de Monte Grande, sobre la Avenida Luciano Valette 362. Te atendemos nosotros, sus dueños, y nuestros clientes nos eligen por la vocación, la cordialidad y la información clara que damos sobre la salud de cada mascota.",
   // Foto principal del inicio (ruta dentro de /public); null muestra una ilustración con huellitas.
-  photo: null as string | null,
+  photo: 'images/hero-onas.jpg' as string | null,
   servicesSummary: 'consultas, estudios, vacunación y más para tu mascota',
   paymentMethods: [] as string[],
   hoursSummary: 'Lunes a viernes de mañana y tarde, sábados de 9 a 13 hs',
@@ -79,7 +79,8 @@ export const BRANCHES: Branch[] = [
     mapQuery: '-34.8010946,-58.4737946',
     whatsapp: '5491165329803',
     whatsappDisplay: '11 6532-9803',
-    photo: null,
+    // Captura de la fachada tomada de Google Street View (baja resolución): A CONFIRMAR, reemplazar por su foto.
+    photo: 'images/sucursal-onas.jpg',
     video: null,
     showSchedule: true,
   },
@@ -127,8 +128,14 @@ export interface TeamMember {
 }
 
 // Fotos de los pacientes (ruta dentro de /public). Mientras esté vacía se muestran 6 cuadros reservados;
-// cada foto que se agregue ocupa un cuadro (siempre queda un mínimo de 6).
-export const PACIENTES_FOTOS: string[] = [];
+// con fotos, se muestran solo las que hay.
+export const PACIENTES_FOTOS: string[] = [
+  'images/paciente-1.jpg',
+  'images/paciente-2.jpg',
+  'images/paciente-3.jpg',
+  'images/paciente-4.jpg',
+  'images/paciente-5.jpg',
+];
 
 // Nosotros: el equipo y una tarjeta de pacientes con cuadros para fotos. Nombres y fotos: A CONFIRMAR con la veterinaria.
 export const TEAM: TeamMember[] = [

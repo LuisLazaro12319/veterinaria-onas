@@ -59,7 +59,7 @@ export const ProfessionalSection: React.FC = () => {
 
             /* Tarjeta de pacientes: varios cuadros para fotos de perros y gatos, sin tarjeta de nombre. */
             if (m.galeria) {
-              const cuadros = Array.from({ length: Math.max(6, PACIENTES_FOTOS.length) }, (_, k) => PACIENTES_FOTOS[k] ?? null);
+              const cuadros: (string | null)[] = PACIENTES_FOTOS.length ? PACIENTES_FOTOS : Array.from({ length: 6 }, () => null);
               return (
                 <div
                   key={m.role}
@@ -78,9 +78,9 @@ export const ProfessionalSection: React.FC = () => {
                       </span>
                     </h3>
                     {m.bio && <p className="text-lg text-slate-600 leading-relaxed mb-8 max-w-2xl mx-auto">{m.bio}</p>}
-                    <ul className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-5">
+                    <ul className="flex flex-wrap justify-center gap-3 sm:gap-5">
                       {cuadros.map((src, k) => (
-                        <li key={k}>
+                        <li key={k} className="w-[calc(50%-0.375rem)] sm:w-[calc(33.333%-0.84rem)]">
                           {src ? (
                             <img
                               src={rutaFoto(src) ?? undefined}
